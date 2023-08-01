@@ -79,11 +79,12 @@
   </div>
 
   <script>
-    // Replace 'your-phone-number' with your actual phone number in the international format
-    const phoneNumber = 'your-phone-number';
-    
+    // Replace '+919019376075' with your actual phone number in the international format
+    const phoneNumber = '+919019376075';
+
     document.getElementById('whatsapp-button').addEventListener('click', function() {
-      const whatsappUrl = `https://api.whatsapp.com/send?phone=+919945815352`; // Replace with your phone number
+      const encodedPhoneNumber = encodeURIComponent(phoneNumber);
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${encodedPhoneNumber}`;
       window.open(whatsappUrl, '_blank');
     });
   </script>
