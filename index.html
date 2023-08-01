@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LetsSurprise</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    #container {
+      text-align: center;
+    }
+
+    #logo {
+      max-width: 40%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    #whatsapp-button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #25D366;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      font-family: Impact, Arial, sans-serif;
+      font-weight: 100;
+      color: #797979;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="./lets_surprise_logo.png" alt="Logo" id="logo">
+    <!-- <h3>Making Memories Memorable</h3> -->
+    <br>
+    <p>Discover a world of amazing surprises for your loved ones.</p>
+    <button id="whatsapp-button">WhatsApp</button>
+    <footer>
+      &copy; 2023 LetsSurprise. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Replace 'your-phone-number' with your actual phone number in the international format
+    const phoneNumber = 'your-phone-number';
+    
+    document.getElementById('whatsapp-button').addEventListener('click', function() {
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=+919945815352`; // Replace with your phone number
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+</body>
+</html>
